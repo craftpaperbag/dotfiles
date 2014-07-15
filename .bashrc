@@ -30,9 +30,13 @@ alias b="git branch -a"
 alias a="git add -p"
 alias add="git add"
 alias commit="git commit"
+alias cm="git commit -m"
 alias m="git merge"
 alias merge="git merge"
 
 # reflesh :D
 alias desk="vim ~/.bashrc"
 alias bath="source ~/.bashrc"
+
+# for rails
+alias rspec="bundle exec rspec"
