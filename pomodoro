@@ -1,0 +1,60 @@
+#!/bin/env ruby
+# encoding: utf-8
+
+class String
+  def c n
+    return "\e[#{n}m#{self}\e[0m"
+  end
+
+  def white; self.c 37; end
+  def bwhite; self.c 47; end
+  def red; self.c 31; end
+  def bred; self.c 41; end
+  def yellow; self.c 33; end
+  def green; self.c 32; end
+end
+
+def pong
+  print "\a"
+end
+
+def main
+  pong
+  puts "                      ".red.bwhite
+  puts "   let's pomodoro!!   ".red.bwhite
+  puts "                      ".red.bwhite
+
+  loop do
+    puts
+    print "enter your task: "
+    task = gets.chomp
+    puts
+    puts "#{task}".yellow
+    puts "25min timer started!"
+    puts
+    min = 25
+    loop do
+      pong
+      puts "  #{min}:00".yellow
+      sleep 60
+      min -= 1
+
+      break if min == 0
+    end
+    pong
+    sleep 0.5
+    pong
+    sleep 0.5
+    pong
+    puts "#{task} done!".green
+    puts "break 5min".green
+    sleep 5*60
+    pong
+    sleep 0.5
+    pong
+    sleep 0.5
+    pong
+  end
+end
+
+main
