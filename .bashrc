@@ -40,3 +40,6 @@ alias bath="source ~/.bashrc"
 
 # for rails
 alias rspec="bundle exec rspec"
+
+# for hub
+alias pr="hub pull-request"
