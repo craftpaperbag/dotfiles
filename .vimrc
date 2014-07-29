@@ -7,6 +7,7 @@ set fileencoding=utf-8
 set background=dark
 syntax on
 set si
+set hlsearch
 
 set nocompatible              " be iMproved, required
 filetype off                  " required

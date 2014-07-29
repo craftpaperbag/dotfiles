@@ -12,13 +12,14 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias re='rbenv exec'
 alias be='bundle exec' # in .bashrc
-alias ll='ls -al' # ls all
-alias lss='ls -aC1' # ls simplified
+alias ll='ls -alG' # ls all
+alias lss='ls -aC1G' # ls simplified
 
 # for git
 alias push='git push'
 alias pull='git pull'
-alias st='git status -v'
+alias st='git status'
+alias s='git status -v'
 alias l="git log --oneline --decorate"
 alias log='git log --decorate'
 alias g="git log --graph --oneline --color --decorate"
@@ -40,6 +41,8 @@ alias bath="source ~/.bashrc"
 
 # for rails
 alias rspec="bundle exec rspec"
+alias ready="bundle install; bundle exec rake db:reset; bundle exec rake db:seed; bundle exec rspec;"
+alias go="bundle exec rails s"
 
 # for hub
 alias pr="hub pull-request"
