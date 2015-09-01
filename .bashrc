@@ -38,6 +38,9 @@ alias m="git merge"
 alias merge="git merge"
 alias herokupush="git push heroku"
 
+# for emaki-project
+alias emakimono="docker port emaki | sed -e \"s/0.0.0.0/$(docker-machine ip default)/\""
+
 # reflesh :D
 alias desk="vim ~/.bashrc"
 alias bath="source ~/.bashrc"
