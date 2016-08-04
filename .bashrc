@@ -69,5 +69,8 @@ alias p="python"
 export GOPATH=~/go
 export PATH=$GOPATH/bin:$PATH
 
+# for pg_config
+export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
+
 # added by travis gem
 [ -f /Users/kazu/.travis/travis.sh ] && source /Users/kazu/.travis/travis.sh
