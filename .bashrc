@@ -74,12 +74,3 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.5/bin:$PATH"
 
 # added by travis gem
 [ -f /Users/kazu/.travis/travis.sh ] && source /Users/kazu/.travis/travis.sh
-
-# for python
-filetype plugin indent on
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
